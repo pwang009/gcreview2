@@ -1,0 +1,583 @@
+================================================================================
+MOBILE APP ARCHITECTURE REVIEW - ANSWERS
+================================================================================
+Date: [INSERT DATE]
+Reviewer(s): [INSERT NAMES]
+Project: Mobile App (iPhone/Android) with Java Microservices Backend
+
+================================================================================
+PILLAR 1: OPERATIONAL EXCELLENCE
+================================================================================
+
+--- Section 1: Development Environment ---
+
+QUESTION 1.1: Is there a documented local setup guide for frontend, backend, and database access?
+ANSWER: 
+
+QUESTION 1.2: Are required versions pinned (JDK, Gradle/Maven, Android/iOS toolchains, dependencies)?
+ANSWER: 
+
+QUESTION 1.3: How long does full onboarding take for a new engineer?
+ANSWER: 
+
+QUESTION 1.4: Are environment variables and local secrets managed consistently and securely?
+ANSWER: 
+
+QUESTION 1.5: Is there parity between local development and shared environments?
+ANSWER: 
+
+--- Section 2: Operating Environment ---
+
+QUESTION 2.1: What environments exist (dev/test/stage/prod), and what are their purposes?
+ANSWER: 
+
+QUESTION 2.2: Are infrastructure and runtime configurations version-controlled (Infrastructure as Code)?
+ANSWER: 
+
+QUESTION 2.3: How are configuration differences between environments managed and audited?
+ANSWER: 
+
+QUESTION 2.4: What is the deployment frequency, and who can deploy to each environment?
+ANSWER: 
+
+QUESTION 2.5: Are region/zone strategies defined for availability and latency?
+ANSWER: 
+
+--- Section 3: CI/CD and Release Management ---
+
+QUESTION 3.1: What are mandatory quality gates before merge/release?
+ANSWER: 
+
+QUESTION 3.2: What is automated test coverage by layer (unit/integration/e2e/security)?
+ANSWER: 
+
+QUESTION 3.3: Is deployment strategy defined (blue-green/canary/rolling)?
+ANSWER: 
+
+QUESTION 3.4: Is rollback automated and tested?
+ANSWER: 
+
+QUESTION 3.5: Are release approvals and change logs traceable?
+ANSWER: 
+
+QUESTION 3.6: Are security tests (SAST/DAST) integrated into CI/CD pipeline as gates?
+ANSWER: 
+
+--- Section 4: Observability and Incident Response ---
+
+QUESTION 4.1: Can logs be correlated across services with trace/request IDs?
+ANSWER: 
+
+QUESTION 4.2: Are metrics and traces available for all critical endpoints?
+ANSWER: 
+
+QUESTION 4.3: Which alerts are actionable vs noisy (alert fatigue)?
+ANSWER: 
+
+QUESTION 4.4: Is there a documented on-call and escalation process?
+ANSWER: 
+
+QUESTION 4.5: Are incident runbooks complete and routinely updated?
+ANSWER: 
+
+QUESTION 4.6: Are postmortems performed and tracked to closure?
+ANSWER: 
+
+QUESTION 4.7: Is there a documented security incident response plan with defined roles?
+ANSWER: 
+
+QUESTION 4.8: Are security incidents tracked, investigated, and reported (RCA required)?
+ANSWER: 
+
+--- Section 5: Operational Readiness ---
+
+QUESTION 5.1: Is there configuration parity between stage and production?
+ANSWER: 
+
+QUESTION 5.2: Are secret rotation and access reviews performed on schedule?
+ANSWER: 
+
+QUESTION 5.3: Are dependency risks tracked (CVEs, outdated libs, SBOM)?
+ANSWER: 
+
+QUESTION 5.4: Are operational runbooks available for top failure scenarios?
+ANSWER: 
+
+QUESTION 5.5: Is ownership clear for each service and operational KPI?
+ANSWER: 
+
+--- Section 6: Defect and Issue Tracking ---
+
+QUESTION 6.1: What system is used to track defects/bugs (Jira, GitHub Issues, Azure DevOps, etc.)?
+ANSWER: 
+
+QUESTION 6.2: Are defects categorized by severity, type, and priority?
+ANSWER: 
+
+QUESTION 6.3: What is the defect SLA (critical/high/medium/low severity)?
+ANSWER: 
+
+QUESTION 6.4: Is there a dashboard showing defect volume, trends, and aging backlog?
+ANSWER: 
+
+QUESTION 6.5: How are defects triaged and assigned to owners?
+ANSWER: 
+
+QUESTION 6.6: Are defects linked to root cause and preventive actions?
+ANSWER: 
+
+QUESTION 6.7: What is the defect closure rate per sprint/month?
+ANSWER: 
+
+QUESTION 6.8: Is there a process to prevent recurring defects?
+ANSWER: 
+
+--- Section 7: Business Metrics and Analytics ---
+
+QUESTION 7.1: Is there a dashboard showing sales, active users, usage trends, and revenue?
+ANSWER: 
+
+QUESTION 7.2: Are request volumes tracked by feature, endpoint, and provider?
+ANSWER: 
+
+QUESTION 7.3: Is there categorization of requests (payment/delivery/user/admin/etc.)?
+ANSWER: 
+
+QUESTION 7.4: What are the key KPIs being tracked and reported monthly?
+ANSWER: 
+
+QUESTION 7.5: Is there user analytics (retention, churn, feature adoption)?
+ANSWER: 
+
+QUESTION 7.6: Are performance metrics tied to business impact (latency vs conversion)?
+ANSWER: 
+
+QUESTION 7.7: Is there a capacity planning process based on growth forecasts?
+ANSWER: 
+
+QUESTION 7.8: Are third-party provider metrics monitored (API rate limits, SLA compliance)?
+ANSWER: 
+
+--- Section 8: Version Control and Repository Management ---
+
+QUESTION 8.1: What VCS platform is used (Git, SVN), and what is the repository structure?
+ANSWER: 
+
+QUESTION 8.2: What branching strategy is implemented (Git Flow, trunk-based, release branches)?
+ANSWER: 
+
+QUESTION 8.3: Are protected branch rules enforced (code review, status checks, merge policies)?
+ANSWER: 
+
+QUESTION 8.4: Are commit message standards documented, and how is changelog managed?
+ANSWER: 
+
+QUESTION 8.5: How are releases tagged, and what versioning strategy is followed?
+ANSWER: 
+
+QUESTION 8.6: Is credential scanning and secrets detection enabled in CI/CD pipeline?
+ANSWER: 
+
+QUESTION 8.7: How are repository access controls and audit logging managed?
+ANSWER: 
+
+QUESTION 8.8: How are rollback and revert procedures handled for problematic commits/releases?
+ANSWER: 
+
+--- Section 9: Mobile App Store Management ---
+
+QUESTION 9.1: How are Apple App Store and Google Play Store accounts secured (MFA, access control)?
+ANSWER: 
+
+QUESTION 9.2: Is app signing and certificate management automated?
+ANSWER: 
+
+QUESTION 9.3: What is the beta testing process (TestFlight, Google Play Beta)?
+ANSWER: 
+
+QUESTION 9.4: Are release notes, privacy policy, and compliance documentation up-to-date?
+ANSWER: 
+
+QUESTION 9.5: Is there a staged rollout strategy with rollback capability?
+ANSWER: 
+
+QUESTION 9.6: How often are app store credentials rotated and access reviewed?
+ANSWER: 
+
+QUESTION 9.7: How is app versioning managed (semantic versioning, build numbers)?
+ANSWER: 
+
+QUESTION 9.8: Is the app submission and approval workflow documented (automated/manual)?
+ANSWER: 
+
+QUESTION 9.9: How is app store policy compliance monitored and violations remediated?
+ANSWER: 
+
+QUESTION 9.10: Is audit logging enabled for AppStore Connect and Google Play Console?
+ANSWER: 
+
+--- Section 10: Cross-Training and Support ---
+
+QUESTION 10.1: Is there a knowledge base, wiki, or documentation portal for runbooks?
+ANSWER: 
+
+QUESTION 10.2: Is there a developer onboarding program with mentoring opportunities?
+ANSWER: 
+
+QUESTION 10.3: Are single points of failure identified and mitigated for critical roles?
+ANSWER: 
+
+QUESTION 10.4: How is on-call rotation designed (fairness, load balancing, escalation)?
+ANSWER: 
+
+QUESTION 10.5: Is support tier structure defined (L1/L2/L3)?
+ANSWER: 
+
+QUESTION 10.6: Is there an incident postmortem process and lessons learned documentation?
+ANSWER: 
+
+QUESTION 10.7: Are there cross-functional knowledge transfer mechanisms and training?
+ANSWER: 
+
+QUESTION 10.8: Are backup team members identified for critical skill areas?
+ANSWER: 
+
+================================================================================
+PILLAR 2: SECURITY
+================================================================================
+
+--- Section 11: Authentication and Authorization ---
+
+QUESTION 11.1: What authentication mechanisms are used for mobile users and internal services?
+ANSWER: 
+
+QUESTION 11.2: How is authorization enforced (RBAC/ABAC, resource-level checks)?
+ANSWER: 
+
+QUESTION 11.3: Is multi-factor authentication (MFA) enforced for sensitive operations?
+ANSWER: 
+
+QUESTION 11.4: Are API keys, OAuth tokens, and JWTs properly validated and scoped?
+ANSWER: 
+
+--- Section 12: Data Protection ---
+
+QUESTION 12.1: How are secrets stored, rotated, and accessed? (vault, KMS, etc.)
+ANSWER: 
+
+QUESTION 12.2: Is all traffic encrypted in transit (TLS 1.2+), including service-to-service calls?
+ANSWER: 
+
+QUESTION 12.3: Is sensitive data encrypted at rest, and where are encryption keys managed and rotated?
+ANSWER: 
+
+QUESTION 12.4: Is database encryption (Transparent Data Encryption) enabled for MySQL?
+ANSWER: 
+
+QUESTION 12.5: Are database access controls and audit logging configured?
+ANSWER: 
+
+--- Section 13: Mobile App Security ---
+
+QUESTION 13.1: Are mobile apps signed and verified (certificate pinning, app attestation)?
+ANSWER: 
+
+QUESTION 13.2: Are sensitive data (credentials, tokens) stored securely in mobile keystores?
+ANSWER: 
+
+QUESTION 13.3: Are reverse engineering protections and obfuscation applied to mobile apps?
+ANSWER: 
+
+QUESTION 13.4: Are mobile apps scanned for hardcoded secrets and sensitive information?
+ANSWER: 
+
+--- Section 14: Code and Dependency Security ---
+
+QUESTION 14.1: Are SAST (Static Application Security Testing) tools integrated into CI/CD pipeline?
+ANSWER: 
+
+QUESTION 14.2: What is the SLA for fixing SAST findings (critical/high/medium/low)?
+ANSWER: 
+
+QUESTION 14.3: Are dependency vulnerabilities (CVE, dependency scanning) checked on every build?
+ANSWER: 
+
+QUESTION 14.4: Is there a Software Bill of Materials (SBOM) maintained and tracked?
+ANSWER: 
+
+QUESTION 14.5: Are third-party and open-source libraries regularly updated and audited?
+ANSWER: 
+
+--- Section 15: Dynamic Security Testing ---
+
+QUESTION 15.1: Are DAST (Dynamic Application Security Testing) scans performed regularly?
+ANSWER: 
+
+QUESTION 15.2: Is API penetration testing conducted, and what is the frequency?
+ANSWER: 
+
+QUESTION 15.3: Are security tests automated in the CI/CD pipeline or part of release gates?
+ANSWER: 
+
+QUESTION 15.4: Are security findings tracked, prioritized, and remediated on schedule?
+ANSWER: 
+
+--- Section 16: API Rate Limiting and DDoS Protection ---
+
+QUESTION 16.1: Is rate limiting implemented on APIs? What are the limits per client/endpoint?
+ANSWER: 
+
+QUESTION 16.2: Are there different rate limits for different user tiers or API plans?
+ANSWER: 
+
+QUESTION 16.3: Is there API quota management and tracking (daily/monthly limits)?
+ANSWER: 
+
+QUESTION 16.4: Is a WAF (Web Application Firewall) deployed in front of the API?
+ANSWER: 
+
+QUESTION 16.5: What DDoS protection measures are in place (traffic filtering, geo-blocking)?
+ANSWER: 
+
+QUESTION 16.6: Is the load balancer protecting against common attacks (SQL injection, XSS)?
+ANSWER: 
+
+QUESTION 16.7: Are rate limit violations logged and alerted?
+ANSWER: 
+
+QUESTION 16.8: How is API throttling communicated to clients (headers, error responses)?
+ANSWER: 
+
+QUESTION 16.9: Is there an API gateway (Kong, AWS API Gateway, etc.) enforcing policies?
+ANSWER: 
+
+QUESTION 16.10: Are rate limit metrics visible in dashboards and monitored?
+ANSWER: 
+
+--- Section 17: Infrastructure and Network Security ---
+
+QUESTION 17.1: Are network policies enforced to restrict inter-pod communication?
+ANSWER: 
+
+QUESTION 17.2: Is VPC/network segmentation implemented (public/private subnets, security groups)?
+ANSWER: 
+
+--- Section 18: Data Governance and Compliance ---
+
+QUESTION 18.1: Is data classified (public/internal/confidential/PII)?
+ANSWER: 
+
+QUESTION 18.2: Where is PII collected, stored, transmitted, and masked?
+ANSWER: 
+
+QUESTION 18.3: Are retention and deletion policies implemented and verified?
+ANSWER: 
+
+QUESTION 18.4: Is access to sensitive data audited and regularly reviewed?
+ANSWER: 
+
+QUESTION 18.5: Which compliance requirements apply (GDPR/CCPA/industry)?
+ANSWER: 
+
+--- Section 19: Security Governance ---
+
+QUESTION 19.1: Is there a security policy covering acceptable use, data handling, and access control?
+ANSWER: 
+
+QUESTION 19.2: Are security awareness and training provided to developers and operations teams?
+ANSWER: 
+
+================================================================================
+PILLAR 3: RELIABILITY
+================================================================================
+
+--- Section 20: Reliability and Availability ---
+
+QUESTION 20.1: Are SLO/SLA targets defined per critical service?
+ANSWER: 
+
+QUESTION 20.2: What are current uptime, latency, and error-rate baselines?
+ANSWER: 
+
+QUESTION 20.3: What are RPO and RTO targets for each critical data domain?
+ANSWER: 
+
+QUESTION 20.4: Are backups tested regularly with actual restore drills?
+ANSWER: 
+
+QUESTION 20.5: Are there single points of failure in services, DB, or networking?
+ANSWER: 
+
+--- Section 21: Container Orchestration and Infrastructure (Reliability aspects) ---
+
+QUESTION 21.1: Is the backend deployed on Kubernetes, Docker Swarm, or managed service (ECS, AppEngine)?
+ANSWER: 
+
+QUESTION 21.2: Who manages the Kubernetes cluster (self-managed vs managed service like EKS/GKE/AKS)?
+ANSWER: 
+
+QUESTION 21.3: What is the node/cluster auto-scaling strategy and limits?
+ANSWER: 
+
+QUESTION 21.4: Is there a service mesh (Istio, Linkerd) for inter-service communication and observability?
+ANSWER: 
+
+QUESTION 21.5: How is service discovery configured (Kubernetes DNS, Consul, etc.)?
+ANSWER: 
+
+QUESTION 21.6: What is the container orchestration upgrade and maintenance strategy?
+ANSWER: 
+
+================================================================================
+PILLAR 4: PERFORMANCE EFFICIENCY
+================================================================================
+
+--- Section 22: Performance and Scalability ---
+
+QUESTION 22.1: What are target p95/p99 latencies for key APIs?
+ANSWER: 
+
+QUESTION 22.2: Have peak and burst load tests been executed recently?
+ANSWER: 
+
+QUESTION 22.3: Where are the top bottlenecks (API, DB, cache, network)?
+ANSWER: 
+
+QUESTION 22.4: Is connection pooling tuned for MySQL and service concurrency?
+ANSWER: 
+
+QUESTION 22.5: Is there a caching strategy (client, edge, service, DB query cache)?
+ANSWER: 
+
+--- Section 23: Container Orchestration and Infrastructure (Performance aspects) ---
+
+QUESTION 23.1: How are container images built, stored, and scanned for vulnerabilities?
+ANSWER: 
+
+QUESTION 23.2: Are container image tags versioned and traceable to source code commits?
+ANSWER: 
+
+QUESTION 23.3: Are resource requests and limits defined for all pods/containers?
+ANSWER: 
+
+QUESTION 23.4: How is Infrastructure as Code managed (Terraform, CloudFormation, Helm charts)?
+ANSWER: 
+
+================================================================================
+PILLAR 5: COST OPTIMIZATION
+================================================================================
+
+--- Section 24: Cost Efficiency ---
+
+QUESTION 24.1: Are cloud resources tagged by team, service, and environment?
+ANSWER: 
+
+QUESTION 24.2: Which services/resources are currently overprovisioned?
+ANSWER: 
+
+QUESTION 24.3: Are autoscaling rules tuned to real traffic patterns?
+ANSWER: 
+
+QUESTION 24.4: Are storage lifecycle policies in place (logs, backups, artifacts)?
+ANSWER: 
+
+QUESTION 24.5: Is there budget alerting and anomaly detection?
+ANSWER: 
+
+--- Section 25: Cost Governance (FinOps) ---
+
+QUESTION 25.1: Is there a monthly cost review cadence with action items?
+ANSWER: 
+
+QUESTION 25.2: Are unit economics tracked (cost per active user/transaction)?
+ANSWER: 
+
+QUESTION 25.3: Are rightsizing recommendations implemented and measured?
+ANSWER: 
+
+QUESTION 25.4: Are idle resources identified and removed automatically?
+ANSWER: 
+
+QUESTION 25.5: Are optimization results reported by team/service?
+ANSWER: 
+
+================================================================================
+PILLAR 6: SUSTAINABILITY (Optional)
+================================================================================
+
+--- Section 26: Resource Efficiency ---
+
+QUESTION 26.1: Are resources allocated and scheduled in an energy-efficient manner?
+ANSWER: 
+
+QUESTION 26.2: Are idle or unused resources identified and removed?
+ANSWER: 
+
+QUESTION 26.3: Is data transfer and storage optimized for efficiency?
+ANSWER: 
+
+================================================================================
+CROSS-CUTTING GOVERNANCE
+================================================================================
+
+--- Section 27: API and Microservice Governance ---
+
+QUESTION 27.1: Is API versioning policy documented and followed?
+ANSWER: 
+
+QUESTION 27.2: How is backward compatibility guaranteed during releases?
+ANSWER: 
+
+QUESTION 27.3: Are service contracts tested automatically (contract testing)?
+ANSWER: 
+
+QUESTION 27.4: How are breaking schema changes approved and communicated?
+ANSWER: 
+
+QUESTION 27.5: Are retries, timeouts, circuit breakers, and idempotency standardized?
+ANSWER: 
+
+================================================================================
+CRITICAL RISKS & REMEDIATION
+================================================================================
+
+--- Section 28: Priority Risk Assessment ---
+
+QUESTION 28.1: What are the top 5 risks today across security, reliability, cost, and performance?
+ANSWER: 
+
+QUESTION 28.2: Which risks have no owner or no remediation plan?
+ANSWER: 
+
+QUESTION 28.3: What is the expected timeline for closing high-priority gaps?
+ANSWER: 
+
+QUESTION 28.4: Which gaps could block scale, audits, or production stability?
+ANSWER: 
+
+================================================================================
+SUMMARY & SCORING
+================================================================================
+
+Overall Assessment Date: [INSERT DATE]
+Reviewer(s): [INSERT NAMES]
+Overall Status: [GREEN / YELLOW / RED]
+
+PILLAR SUMMARY:
+
+Pillar 1 - Operational Excellence:   ✅ [ ]  ⚠️ [ ]  ❌ [ ]
+Pillar 2 - Security:                 ✅ [ ]  ⚠️ [ ]  ❌ [ ]
+Pillar 3 - Reliability:              ✅ [ ]  ⚠️ [ ]  ❌ [ ]
+Pillar 4 - Performance Efficiency:   ✅ [ ]  ⚠️ [ ]  ❌ [ ]
+Pillar 5 - Cost Optimization:        ✅ [ ]  ⚠️ [ ]  ❌ [ ]
+Pillar 6 - Sustainability:           ✅ [ ]  ⚠️ [ ]  ❌ [ ]
+
+TOP PRIORITY GAPS:
+1. [ITEM] - Owner: [NAME], Due: [DATE]
+2. [ITEM] - Owner: [NAME], Due: [DATE]
+3. [ITEM] - Owner: [NAME], Due: [DATE]
+
+NEXT REVIEW DATE: [DATE]
+NEXT REVIEWER(S): [NAMES]
+
+================================================================================
